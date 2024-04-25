@@ -57,8 +57,8 @@ width: 300px; /* Adicionei uma largura fixa manual */
    margin: auto; /* Centraliza o conteúdo na tela */
  border-radius: 20px; /* Adiciona cantos arredondados */
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-width: 250px; /* Adicionei uma largura fixa manual */
-     height: 550px; /* Adicionei uma altura máxima */
+width: 310px; /* Adicionei uma largura fixa manual */
+     height: 600px; /* Adicionei uma altura máxima */
 }
 #qrCode {
     margin: 20px 0; /* Spacing above and below QR Code */
