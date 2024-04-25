@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://th.bing.com/th/id/OIP.jTKeoQLvH5KftorRj6wvFQHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+  }
+  .centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .mainScreen {
+    /*border: 2px solid #4A90E2; /* Adicionei uma borda */
+    padding: 20px; /* Adicionei um padding */
+    max-width: 800px; /* Adicionei uma largura máxima */
+    margin: auto; /* Centraliza o conteúdo na tela */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+  background-color: white; /* Altera a cor de fundo para branco */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  display: flex; /* Adiciona flexbox */
+  flex-direction: column; /* Organiza os itens em uma coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+   border-radius: 20px; /* Adiciona cantos arredondados */
+}
+#maestroScreen {
+  border-radius: 20px; /* Adiciona cantos arredondados */
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+   /*max-width: 500px; /* Adicionei uma largura máxima */
+    width: 300px; /* Adicionei uma largura fixa manual */
+     height: 600px; /* Adicionei uma altura máxima */
+}
+#whatsAppScreen {
+border-radius: 20px; /* Adiciona cantos arredondados */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+width: 300px; /* Adicionei uma largura fixa manual */
+     max-height: 600px; /* Adicionei uma altura máxima */
+}
+#telegramScreen {
+border-radius: 20px; /* Adiciona cantos arredondados */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+width: 300px; /* Adicionei uma largura fixa manual */
+     max-height: 600px; /* Adicionei uma altura máxima */
+}
+#adminScreen {
+  flex-direction: column; /* Organiza os itens em uma coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+   margin: auto; /* Centraliza o conteúdo na tela */
+ border-radius: 20px; /* Adiciona cantos arredondados */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+width: 250px; /* Adicionei uma largura fixa manual */
+     max-height: 400px; /* Adicionei uma altura máxima */
+}
+#qrCode {
+    margin: 20px 0; /* Spacing above and below QR Code */
+    width: 170px;
+    height: 170px;
+    position: absolute; /* Define a posição absoluta */
+  bottom: 1; /* Alinha o elemento ao canto inferior */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição para o centro exato */
+  /
+    
+  }
+  /* Define a classe .button */
+.button {
+    display: flex;/* Cria um container flexível */
+    align-items: center;/* Centraliza os itens verticalmente */
+    justify-content: center;/* Centraliza os itens horizontalmente */
+    width: 93%;/* Define a largura do botão como 80% do container pai */
+    padding: 15px;/* Adiciona um padding de 15px ao botão */
+    margin: 10px;/* Adiciona uma margem de 10px ao botão */
+    border-radius: 20px;/* Adiciona cantos arredondados ao botão */
+    font-size: 18px;/* Define o tamanho da fonte do texto do botão */
+    color: white;/* Define a cor do texto do botão */
+    cursor: pointer;/* Muda o cursor para um ponteiro quando passa sobre o botão */
+    transition: background-color 0.3s ease;/* Adiciona uma transição suave à cor de fundo do botão */
+    background-color: #4A90E2;/* Adicione uma cor de fundo ao botão */
+}
+
+
+  .whatsapp { background-color: #25D366; }
+  .telegram { background-color: #0088cc; }
+  .form { background-color: #ff5722; }
+  .maestro { background-color: #4CAF50; }
+  .admin { background-color: #808080; }
+  @media (max-width: 600px) {
+    .button { width: 90%; }
+  }
+.button i {
+  margin-right: 8px;
+}
+  .hidden { display: none; }
+
+  h1 {
+  color: #4A90E2;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+  h2 {color: #4A90E2;}
+  
+button {
+  /*REFERENTE AO BUTTON VOLTAR*/
+  margin-top: 20px;
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px; /* Adiciona cantos arredondados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+button:hover {background-color: #ffa64d;}
+
+#adminScreen input[type="text"],
+        #adminScreen input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        
