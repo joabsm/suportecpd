@@ -1,412 +1,81 @@
 <!DOCTYPE html>
-
 <html lang="pt">
-
 <head>
-<link rel="icon" href="https://www.cpdverificationservice.com/uploads/1/2/6/8/126857925/cropped-cpd-logo-clear-1.png">
+  <link rel="icon" href="https://www.cpdverificationservice.com/uploads/1/2/6/8/126857925/cropped-cpd-logo-clear-1.png">
+
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>SUPORTE CPD</title>
-
 <!-- Inclua a biblioteca Font Awesome para os ícones -->
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <!-- Adicionei uma fonte mais moderna -->
-
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-<style>
+<link rel="stylesheet" type="text/css" href="style.css">
 
- body {
-
-    font-family: 'Roboto', sans-serif;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    height: 100vh;
-
-    margin: 0;
-
-    background-image: url('https://th.bing.com/th/id/OIP.jTKeoQLvH5KftorRj6wvFQHaEK?rs=1&pid=ImgDetMain');
-
-    background-size: cover;
-
-    background-position: center;
-
-  }
-
-  .mainScreen {
-
-    /*border: 2px solid #4A90E2; /* Adicionei uma borda */
-
-    padding: 20px; /* Adicionei um padding */
-
-    max-width: 800px; /* Adicionei uma largura máxima */
-
-    margin: auto; /* Centraliza o conteúdo na tela */
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-
-  background-color: white; /* Altera a cor de fundo para branco */
-
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
-  background-color: white;
-
-  display: flex; /* Adiciona flexbox */
-
-  flex-direction: column; /* Organiza os itens em uma coluna */
-
-  align-items: center; /* Centraliza os itens horizontalmente */
-
-  justify-content: center; /* Centraliza os itens verticalmente */
-
-   border-radius: 20px; /* Adiciona cantos arredondados */
-
-}
-
-#maestroScreen {
-
-  border-radius: 20px; /* Adiciona cantos arredondados */
-
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-
-   /*max-width: 500px; /* Adicionei uma largura máxima */
-
-    width: 300px; /* Adicionei uma largura fixa manual */
-
-     height: 600px; /* Adicionei uma altura máxima */
-
-}
-
-#whatsAppScreen {
-
-border-radius: 20px; /* Adiciona cantos arredondados */
-
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-
-width: 300px; /* Adicionei uma largura fixa manual */
-
-     max-height: 600px; /* Adicionei uma altura máxima */
-
-}
-
-#telegramScreen {
-
-border-radius: 20px; /* Adiciona cantos arredondados */
-
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-
-width: 300px; /* Adicionei uma largura fixa manual */
-
-     max-height: 600px; /* Adicionei uma altura máxima */
-
-}
-
-#qrCode {
-
-    margin: 20px 0; /* Spacing above and below QR Code */
-
-    width: 170px;
-
-    height: 170px;
-
-    position: absolute; /* Define a posição absoluta */
-
-  bottom: 1; /* Alinha o elemento ao canto inferior */
-
-  left: 50%; /* Centraliza horizontalmente */
-
-  transform: translateX(-50%); /* Ajusta a posição para o centro exato */
-
-  /*border-radius: 20px; /* Adiciona cantos arredondados */
-
-   /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-
-   /*max-width: 500px; /* Adicionei uma largura máxima */
-
-    
-
-  }
-
-  .button {
-
-    
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 80%;
-
-    padding: 15px;
-
-    margin: 10px;
-
-    border-radius: 20px; /* Adiciona cantos arredondados */
-
-    font-size: 18px;
-
-    color: white;
-
-    cursor: pointer;
-
-    transition: background-color 0.3s ease;
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra*/
-
-}
-
-
-
-  .whatsapp { background-color: #25D366; }
-
-  .telegram { background-color: #0088cc; }
-
-  .form { background-color: #ff5722; }
-
-  .maestro { background-color: #4CAF50; }
-
-  @media (max-width: 600px) {
-
-    .button { width: 90%; }
-
-  }
-
-.button i {
-
-  margin-right: 8px;
-
-}
-
-  .hidden { display: none; }
-
-
-
-  h1 {
-
-  color: #4A90E2;
-
-  font-size: 36px;
-
-  font-weight: bold;
-
-  text-align: center;
-
-  margin-bottom: 20px;
-
-}
-
-  h2 {color: #4A90E2;}
-
-  
-
-button {
-
-  /*REFERENTE AO BUTTON VOLTAR*/
-
-  margin-top: 20px;
-
-  background-color: #FF8C00;
-
-  color: white;
-
-  border: none;
-
-  padding: 10px 20px;
-
-  cursor: pointer;
-
-  transition: background-color 0.3s ease;
-
-  border-radius: 20px; /* Adiciona cantos arredondados */
-
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-
-}
-
-button:hover {background-color: #ffa64d;}
-
-
-
-</style>
 
 </head>
-
 <body>
 
-
-
 <div id="mainScreen" class="mainScreen" style="text-align: center;"> <!-- Adicionei a classe mainScreen -->
-
   <img src="https://www.cpdverificationservice.com/uploads/1/2/6/8/126857925/cropped-cpd-logo-clear-1.png" alt="Descrição da Imagem" style="max-width:100px; height:auto; margin-top: 20px;">
 
-
-
   <h1>Soluções e Suporte</h1>
-
   <button class="button whatsapp" onclick="showWhatsAppOptions()"><i class="fa fa-whatsapp"></i>WhatsApp</button>
-
   <button class="button telegram" onclick="showTelegramOptions()"><i class="fa fa-telegram"></i>Telegram</button>
-
   <button class="button form" onclick="redirectToLink('https://joabsm.github.io/termos/')"><i class="fa fa-wpforms"></i> Formulário</button>
-
   <button class="button maestro" onclick="showMaestroOptions()"><i class="fa fa-apple"></i>Maestro IPhone</button>
-
-
+  <button class="button admin" onclick="showAdmOptions()"><i class="fa fa-apple"></i>ADMI</button>
 
 </div>
-
-
 
 <div id="whatsAppScreen" class="hidden" style="text-align: center;">
-
 <img src="https://portais.univasf.edu.br/programadegestao/imagens/icon-whatsapp.png/@@images/image.png" alt="Descrição da Imagem" style="max-width:100px; height:auto; margin-top: 20px;">
 
-
-
   <h2>Contato WhatsApp</h2>
-
   <button class="button whatsapp"onclick="redirectToLink('https://centraldeatendimento.totvs.com/hc/article_attachments/360047086133/mceclip0.png')"><i class="fa fa-whatsapp"></i>JONILSON</button>
-
   <button class="button whatsapp"onclick="redirectToLink('')"><i class="fa fa-whatsapp"></i>MATEUS</button>
-
   <button class="button whatsapp"onclick="redirectToLink('https://api.whatsapp.com/send?phone=5599984395154')"><i class="fa fa-whatsapp"></i>JOAB</button>
-
   <button class="button whatsapp"onclick="redirectToLink('')"><i class="fa fa-whatsapp"></i>EDI</button>
-
   <button onclick="goBack('whatsAppScreen')">Voltar</button>
-
 </div>
-
-
 
 <div id="telegramScreen" class="hidden" style="text-align: center;">
-
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTKAE2op_kK1kSFn6jgPEeBIE7phPDgknJVxavcNRAFw&s" alt="Descrição da Imagem" style="max-width:100px; height:auto; margin-top: 20px;">
 
-
-
   <h2>Contato Telegram</h2>
-
   <button class="button telegram"onclick="redirectToLink('')"><i class="fa fa-telegram"></i>JONILSON</button>
-
   <button class="button telegram"onclick="redirectToLink('https://t.me/mateusmaya')"><i class="fa fa-telegram"></i>MATEUS</button>
-
   <button class="button telegram"onclick="redirectToLink('https://t.me/Joab_Mota')"><i class="fa fa-telegram"></i>JOAB</button>
-
   <button class="button telegram"onclick="redirectToLink('https://t.me/pioedi')"><i class="fa fa-telegram"></i>EDI</button>
-
   <button onclick="goBack('telegramScreen')">Voltar</button>
-
 </div>   
-
   
-
   <div id="maestroScreen" class="hidden" style="text-align: center;">
-
     <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/e9/86/ec/e986ec24-c6ca-4bab-dbcf-39559a09ff70/AppIcon-1x_U007ephone-0-85-220-0.png/152x152bb-80.png" alt="Descrição da Imagem" style="max-width:100px; height:auto; margin-top: 20px;">
 
-
-
   <h2>Opções Maestro</h2>
-
   <button class="button maestro" onclick="redirectToLink('https://testflight.apple.com/join/FIanR83b')">Ir para o Link</button>
-
   <button class="button maestro" onclick="generateQRCode('https://testflight.apple.com/join/FIanR83b')">Gerar QR Code</button>
-
   <button onclick="goBack('maestroScreen')">Voltar</button>
-
     
-
   <div id="qrCode"></div>
-
     
-
 </div>
 
+<div id="adminScreen" class="hidden" style="text-align: center;">
+  <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-do-admin-no-estilo-na-moda-projeto-isolado-fundo-branco-s%C3%ADmbolo-liso-simples-e-moderno-vetor-para-135742404.jpg" alt="Descrição da Imagem" style="max-width:100px; height:auto; margin-top: 20px;">
+
+  <h2>Login</h2>
+        
+        <input type="text" placeholder="Digite o Usuário" name="uname" id="uname" required>
+        
+        <input type="password" placeholder="Digite a Senha" name="psw" id="psw" required>
+        <button type="submit" onclick="validate()">Login</button>
+        <button onclick="goBack('adminScreen')">Voltar</button>
+    
+</div>   
   
-
-<script>
-
-function showWhatsAppOptions() {
-
-  document.getElementById('mainScreen').style.display = 'none';
-
-  document.getElementById('whatsAppScreen').style.display = 'block';
-
-}
-
-
-
-function showTelegramOptions() {
-
-  document.getElementById('mainScreen').style.display = 'none';
-
-  document.getElementById('telegramScreen').style.display = 'block';
-
-}
-
-  function showMaestroOptions() {
-
-  document.getElementById('mainScreen').style.display = 'none';
-
-  document.getElementById('maestroScreen').style.display = 'block';
-
-}
-
-
-
-function goBack(screenId) {
-
-  document.getElementById(screenId).style.display = 'none';
-
-  document.getElementById('mainScreen').style.display = 'block';
-
-}
-
-  function redirectToLink(link) {
-
-  window.location.href = link;
-
-}
-
-
-
-function generateQRCode(link) {
-
-  var qrCodeUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=' + encodeURIComponent(link);
-
-  document.getElementById('qrCode').innerHTML = '<img src="' + qrCodeUrl + '" alt="QR Code">';
-
-}
-
-
-
-function goBack(screenId) {
-
-  document.getElementById(screenId).style.display = 'none';
-
-  document.getElementById('mainScreen').style.display = 'block';
-
-}
-
-</script>
-
-
-
+ <script src="script.js"></script>
 </body>
-
 </html>
-
