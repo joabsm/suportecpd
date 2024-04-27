@@ -102,7 +102,15 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
 max-height: 600px; /* Adicionei uma altura máxima */
 }
 #qrCode {
- 
+ display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+           
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
   }
   /* Define a classe .button */
 .button {
