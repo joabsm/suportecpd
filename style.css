@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,6 +50,12 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
 width: 300px; /* Adicionei uma largura fixa manual */
      max-height: 600px; /* Adicionei uma altura máxima */
 }
+#formScreen {
+border-radius: 20px; /* Adiciona cantos arredondados */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+width: 300px; /* Adicionei uma largura fixa manual */
+     max-height: 500px; /* Adicionei uma altura máxima */
+}
 #adminScreen {
   flex-direction: column; /* Organiza os itens em uma coluna */
   align-items: center; /* Centraliza os itens horizontalmente */
@@ -58,7 +64,7 @@ width: 300px; /* Adicionei uma largura fixa manual */
  border-radius: 20px; /* Adiciona cantos arredondados */
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
 width: 310px; /* Adicionei uma largura fixa manual */
-     height: 600px; /* Adicionei uma altura máxima */
+     max-height: 600px; /* Adicionei uma altura máxima */
 }
 #qrCode {
     margin: 20px 0; /* Spacing above and below QR Code */
@@ -134,4 +140,55 @@ button:hover {background-color: #ffa64d;}
             box-sizing: border-box;
             border-radius: 4px;
         }
+
+        /*Estilo da tela formulario*/
         
+.sm__form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sm-field__wrapper {
+            margin-bottom: 15px;
+        }
+        .sm-field__label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .sm-field__input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .sm-btn--primary {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .sm-btn--primary:hover {
+            background-color: #0056b3;
+        }
+        .sm-branding-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .sm-branding-footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .sm-branding-footer a:hover {
+            text-decoration: underline;
+        }
