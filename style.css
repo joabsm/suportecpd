@@ -1,14 +1,15 @@
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   
+    
+    
     height: 100vh;
-    margin: 0;
-    background-image: url('https://th.bing.com/th/id/OIP.jTKeoQLvH5KftorRj6wvFQHaEK?rs=1&pid=ImgDetMain');
-    background-size: cover;
-    background-position: center;
+    
+    
+
+    font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
   }
   .centered {
   display: flex;
@@ -17,63 +18,96 @@ body {
 }
 
   .mainScreen {
-    /*border: 2px solid #4A90E2; /* Adicionei uma borda */
-    padding: 20px; /* Adicionei um padding */
-    max-width: 800px; /* Adicionei uma largura máxima */
-    margin: auto; /* Centraliza o conteúdo na tela */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-  background-color: white; /* Altera a cor de fundo para branco */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: white;
-  display: flex; /* Adiciona flexbox */
-  flex-direction: column; /* Organiza os itens em uma coluna */
-  align-items: center; /* Centraliza os itens horizontalmente */
-  justify-content: center; /* Centraliza os itens verticalmente */
-   border-radius: 20px; /* Adiciona cantos arredondados */
+    max-width: 600px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+flex-direction: column; /* Organiza os itens em uma coluna */
+align-items: center; /* Centraliza os itens horizontalmente */
+justify-content: center; /* Centraliza os itens verticalmente */
+margin: auto; /* Centraliza o conteúdo na tela */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+max-height: 600px; /* Adicionei uma altura máxima */
 }
 #maestroScreen {
-  border-radius: 20px; /* Adiciona cantos arredondados */
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-   /*max-width: 500px; /* Adicionei uma largura máxima */
-    width: 300px; /* Adicionei uma largura fixa manual */
-     height: 600px; /* Adicionei uma altura máxima */
+  max-width: 600px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+flex-direction: column; /* Organiza os itens em uma coluna */
+align-items: center; /* Centraliza os itens horizontalmente */
+justify-content: center; /* Centraliza os itens verticalmente */
+margin: auto; /* Centraliza o conteúdo na tela */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+max-height: 600px; /* Adicionei uma altura máxima */
 }
 #whatsAppScreen {
-border-radius: 20px; /* Adiciona cantos arredondados */
+max-width: 600px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+flex-direction: column; /* Organiza os itens em uma coluna */
+align-items: center; /* Centraliza os itens horizontalmente */
+justify-content: center; /* Centraliza os itens verticalmente */
+margin: auto; /* Centraliza o conteúdo na tela */
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-width: 300px; /* Adicionei uma largura fixa manual */
-     max-height: 600px; /* Adicionei uma altura máxima */
+max-height: 600px; /* Adicionei uma altura máxima */
 }
 #telegramScreen {
-border-radius: 20px; /* Adiciona cantos arredondados */
+max-width: 600px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+flex-direction: column; /* Organiza os itens em uma coluna */
+align-items: center; /* Centraliza os itens horizontalmente */
+justify-content: center; /* Centraliza os itens verticalmente */
+margin: auto; /* Centraliza o conteúdo na tela */
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-width: 300px; /* Adicionei uma largura fixa manual */
-     max-height: 600px; /* Adicionei uma altura máxima */
+max-height: 600px; /* Adicionei uma altura máxima */
 }
 #formScreen {
-border-radius: 20px; /* Adiciona cantos arredondados */
+max-width: 600px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+flex-direction: column; /* Organiza os itens em uma coluna */
+align-items: center; /* Centraliza os itens horizontalmente */
+justify-content: center; /* Centraliza os itens verticalmente */
+margin: auto; /* Centraliza o conteúdo na tela */
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-width: 300px; /* Adicionei uma largura fixa manual */
-     max-height: 500px; /* Adicionei uma altura máxima */
+max-height: 600px; /* Adicionei uma altura máxima */
 }
 #adminScreen {
-  flex-direction: column; /* Organiza os itens em uma coluna */
-  align-items: center; /* Centraliza os itens horizontalmente */
-  justify-content: center; /* Centraliza os itens verticalmente */
-   margin: auto; /* Centraliza o conteúdo na tela */
- border-radius: 20px; /* Adiciona cantos arredondados */
+  max-width: 600px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+flex-direction: column; /* Organiza os itens em uma coluna */
+align-items: center; /* Centraliza os itens horizontalmente */
+justify-content: center; /* Centraliza os itens verticalmente */
+margin: auto; /* Centraliza o conteúdo na tela */
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-width: 310px; /* Adicionei uma largura fixa manual */
-     max-height: 600px; /* Adicionei uma altura máxima */
+max-height: 600px; /* Adicionei uma altura máxima */
 }
 #qrCode {
-    margin: 20px 0; /* Spacing above and below QR Code */
-    width: 170px;
-    height: 170px;
-    position: absolute; /* Define a posição absoluta */
-  bottom: 1; /* Alinha o elemento ao canto inferior */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajusta a posição para o centro exato */
+   height: 100vh;
+  
+    font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
   /
     
   }
