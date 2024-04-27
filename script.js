@@ -1,3 +1,5 @@
+/*script*/
+
 function showWhatsAppOptions() {
   document.getElementById('mainScreen').style.display = 'none';
   document.getElementById('whatsAppScreen').style.display = 'block';
