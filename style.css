@@ -116,7 +116,7 @@ max-height: 600px; /* Adicionei uma altura máxima */
     display: flex;/* Cria um container flexível */
     align-items: center;/* Centraliza os itens verticalmente */
     justify-content: center;/* Centraliza os itens horizontalmente */
-    width: 93%;/* Define a largura do botão como 80% do container pai */
+    width: 97%;/* Define a largura do botão como 80% do container pai */
     padding: 15px;/* Adiciona um padding de 15px ao botão */
     margin: 10px;/* Adiciona uma margem de 10px ao botão */
     border-radius: 20px;/* Adiciona cantos arredondados ao botão */
