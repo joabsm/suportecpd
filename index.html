@@ -13,6 +13,8 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -23,7 +25,7 @@
   <h1>Soluções e Suporte</h1>
   <button class="button whatsapp" onclick="showWhatsAppOptions()"><i class="fa fa-whatsapp"></i>WhatsApp</button>
   <button class="button telegram" onclick="showTelegramOptions()"><i class="fa fa-telegram"></i>Telegram</button>
-  <button class="button form" onclick="redirectToLink('https://joabsm.github.io/termos/')"><i class="fa fa-wpforms"></i> Formulário</button>
+  <button class="button form" onclick="showFormOptions()"><i class="fa fa-wpforms"></i> Formulário</button>
   <button class="button maestro" onclick="showMaestroOptions()"><i class="fa fa-apple"></i>Maestro IPhone</button>
   <button class="button admin" onclick="showAdmOptions()"><i class="fa fa-apple"></i>ADMI</button>
 
@@ -49,6 +51,78 @@
   <button class="button telegram"onclick="redirectToLink('https://t.me/Joab_Mota')"><i class="fa fa-telegram"></i>JOAB</button>
   <button class="button telegram"onclick="redirectToLink('https://t.me/pioedi')"><i class="fa fa-telegram"></i>EDI</button>
   <button onclick="goBack('telegramScreen')">Voltar</button>
+</div>   
+
+<div id="formScreen" class="hidden" style="text-align: center;">
+
+  <form method="post" action="https://api.sheetmonkey.io/form/sTpSLQe1BTKGWf2HmJpa1K" autoComplete="on" class="sm__form">
+        <div class="sm__form__fields">
+            <!-- Campo de Nome Completo -->
+            <div class="sm-field__wrapper">
+                <div class="sm-field__wrapper__inside">
+                    <div class="sm-field sm-field-text sm-field--large">
+                        <label class="sm-field__label" for="sm-field-v6GKgPYnpD">Nome Completo <strong style="color:red">*</strong></label>
+                        <input type="text" class="sm-field__input sm-field__input--text" id="sm-field-v6GKgPYnpD" name="Nome Completo" required=""/>
+                    </div>
+                </div>
+            </div>
+            <!-- Campo de Telefone -->
+            <div class="sm-field__wrapper">
+                <div class="sm-field__wrapper__inside">
+                    <div class="sm-field sm-field--number sm-field--medium">
+                        <label class="sm-field__label" for="sm-field-FdHeyunTsb">Telefone <strong style="color:red">*</strong></label>
+                        <input type="number" class="sm-field__input sm-field__input--url" id="sm-field-FdHeyunTsb" name="Telefone" required=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="sm-field__wrapper">
+                <div class="sm-field__wrapper__inside">
+                    <div class="sm-field sm-field--number sm-field--medium">
+                        <label class="sm-field__label" for="sm-field-Rhyttkqi3y">CPF <strong style="color:red">*</strong></label>
+                        <input type="number" class="sm-field__input sm-field__input--url" id="sm-field-Rhyttkqi3y" name="CPF" required=""/>
+                    </div>
+                </div>
+            </div>
+            <!-- Campo de ID Mateus -->
+            <div class="sm-field__wrapper">
+                <div class="sm-field__wrapper__inside">
+                    <div class="sm-field sm-field-text sm-field--small">
+                        <label class="sm-field__label" for="sm-field-eKrwrJQ0QC">ID Mateus</label>
+                        <input type="text" class="sm-field__input sm-field__input--text" id="sm-field-eKrwrJQ0QC" name="ID Mateus"/>
+                    </div>
+                </div>
+            </div>
+            <!-- Campo de Codigo GMCore -->
+            <div class="sm-field__wrapper">
+                <div class="sm-field__wrapper__inside">
+                    <div class="sm-field sm-field--number sm-field--small">
+                        <label class="sm-field__label" for="sm-field-6pMU6c2Zw2">Codigo GMCore</label>
+                        <input type="number" class="sm-field__input sm-field__input--url" id="sm-field-6pMU6c2Zw2" name="Codigo GMCore"/>
+                    </div>
+                </div>
+            </div>
+            <!-- Campo de E-mail Corporativo -->
+            <div class="sm-field__wrapper">
+                <div class="sm-field__wrapper__inside">
+                    <div class="sm-field sm-field--email sm-field--large">
+                        <label class="sm-field__label" for="sm-field-7R53ua9diA">E-mail Corporativo</label>
+                        <input type="email" class="sm-field__input sm-field__input--text" id="sm-field-7R53ua9diA" name="Email Corporativo" autoComplete="email"/>
+                    </div>
+                </div>
+            </div>
+            
+          
+          
+            <div class="sm-actions__container">
+                <button type="submit" class="sm-btn sm-btn--primary">Enviar</button>
+            </div>
+            <div class="sm-branding-footer">
+                <a href="https://sheetmonkey.io/form-builder?ref=form" target="_blank">🐵 Feito com Sheet Monkey</a>
+            </div>
+        </div>
+    </form>
+  
+  <button onclick="goBack('formScreen')">Voltar</button>
 </div>   
   
   <div id="maestroScreen" class="hidden" style="text-align: center;">
