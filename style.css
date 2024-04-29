@@ -1,15 +1,9 @@
 body {
-   
-    
-    
     height: 100vh;
-    
-    
-
     font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
   }
   .centered {
   display: flex;
@@ -29,7 +23,7 @@ align-items: center; /* Centraliza os itens horizontalmente */
 justify-content: center; /* Centraliza os itens verticalmente */
 margin: auto; /* Centraliza o conteúdo na tela */
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
-max-height: 600px; /* Adicionei uma altura máxima */
+max-height: 650px; /* Adicionei uma altura máxima */
 }
 #maestroScreen {
   max-width: 600px;
@@ -132,8 +126,9 @@ max-height: 600px; /* Adicionei uma altura máxima */
   .whatsapp { background-color: #25D366; }
   .telegram { background-color: #0088cc; }
   .form { background-color: #ff5722; }
-  .maestro { background-color: #4CAF50; }
+  .maestro { background-color: #0000FF; }
   .admin { background-color: #808080; }
+  .coletor { background-color: #FF0000; }
   @media (max-width: 600px) {
     .button { width: 90%; }
   }
